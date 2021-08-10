@@ -1,0 +1,16 @@
+//List.ejs old code for Loop
+
+<% for(var i = 0; i<newListItems.length; i++){ %>
+<div class="item">
+
+  <input type="checkbox">
+  <p> <%= newListItems[i].name %> </p>
+
+  <div class="delete">
+    <form class="" action="/del" method="post">
+      <button type="submit" name="del" value="<%= i %>">-</button>
+    </form>
+  </div>
+
+</div>
+<% } %>
